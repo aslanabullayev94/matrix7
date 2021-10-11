@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bg-layer {
+    opacity: 0.95;
+    position: relative;
+    .bg-image {
+        width: 100vw;;
+        height: 1500px;
+        background: url(images/building.jpg);
+        background-size: cover;
+    }
+    .bg-bottom-white-space {
+        position: absolute;
+        width: 100vw;
+        height: 765px;
+        background-color: #8DB1E0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.top-layer {
+    position: absolute;
+    background-color: white;
+    opacity: 0.92;
+    box-shadow: 2px 2px 50px black;
+    .header-form-container {
+        display: flex;
+        flex-direction: column;
+        .header {
+            width: 1100px;
+            height: 250px;
+            text-align: center;
+            .prof-consultation {
+                user-select: none;
+                display: inline-block;
+                margin: 60px auto;
+                height: 35px;
+                border-bottom: 1px solid #5CB1CD;
+                letter-spacing: 2.5px;
+                transition: 0.3s;
+                &:hover {
+                    letter-spacing: 2.7px;
+                }
+            }
+            #contact {
+                margin: 30px auto;
+                font-weight: bold;
+                font-size: 36px;
+                user-select: none;
+            }
+        }
+        .form-container {
+            width: 1100px;
+            height: 500px;
+            form {
+                margin: 25px;
+                padding: 20px;
+                text-align: center;
+                .input {
+                    margin: 20px auto;
+                    padding: 15px 10px;
+                    background-color: inherit;
+                    font-size: 14px;
+                    font-weight: 100;
+                    color: black;
+                    letter-spacing: 3px;
+                    border: none;
+                    border-bottom: 1px solid rgb(41, 41, 41);
+                    transition: 0.35s;
+                    &::placeholder {
+                        color: darkgrey;
+                    }
+                    &:focus {
+                        outline: none;
+                        background-color: white;
+                        box-shadow: 2px 2px 5px black;
+                    }
+                    &:hover {
+                        &::placeholder {
+                            color: black;
+                        }
+                    }
+                }
+                .first-row {
+                    margin:  auto 10px;
+                    width: 255px;
+                }
+                .text-2 {
+                    display: block;
+                    width: 850px;
+                }
+                .textarea {
+                    width: 850px;
+                    height: 64px;
+                    resize: none;
+                }
+                .submit {
+                    display: block;
+                    margin: 20px auto;
+                    width: 220px;
+                    height: 55px;
+                    border-radius: 0;
+                    border: 2px solid black;
+                    background-color: white;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    cursor: pointer;
+                    transition: 0.25s;
+                    &:hover {
+                        width: 250px;
+                    }
+                    &:active {
+                        transform: scale(1.05);
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .contact-adress-outer-container {
+        box-sizing: border-box;
+        width: 1100px;
+        height: 450px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .contact-adress-inner-container {
+            width: 900px;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            .contact-info {
+                padding-right: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 550px;
+            }
+            .location {
+                width: 550px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                iframe {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+}

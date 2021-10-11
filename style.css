@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.bg-layer {
+  opacity: 0.95;
+  position: relative;
+}
+
+.bg-layer .bg-image {
+  width: 100vw;
+  height: 1500px;
+  background: url(images/building.jpg);
+  background-size: cover;
+}
+
+.bg-layer .bg-bottom-white-space {
+  position: absolute;
+  width: 100vw;
+  height: 765px;
+  background-color: #8DB1E0;
+  bottom: 0;
+  left: 0;
+}
+
+.top-layer {
+  position: absolute;
+  background-color: white;
+  opacity: 0.92;
+  -webkit-box-shadow: 2px 2px 50px black;
+          box-shadow: 2px 2px 50px black;
+}
+
+.top-layer .header-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-layer .header-form-container .header {
+  width: 1100px;
+  height: 250px;
+  text-align: center;
+}
+
+.top-layer .header-form-container .header .prof-consultation {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+  margin: 60px auto;
+  height: 35px;
+  border-bottom: 1px solid #5CB1CD;
+  letter-spacing: 2.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top-layer .header-form-container .header .prof-consultation:hover {
+  letter-spacing: 2.7px;
+}
+
+.top-layer .header-form-container .header #contact {
+  margin: 30px auto;
+  font-weight: bold;
+  font-size: 36px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.top-layer .header-form-container .form-container {
+  width: 1100px;
+  height: 500px;
+}
+
+.top-layer .header-form-container .form-container form {
+  margin: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-layer .header-form-container .form-container form .input {
+  margin: 20px auto;
+  padding: 15px 10px;
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: 100;
+  color: black;
+  letter-spacing: 3px;
+  border: none;
+  border-bottom: 1px solid #292929;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.top-layer .header-form-container .form-container form .input::-webkit-input-placeholder {
+  color: darkgrey;
+}
+
+.top-layer .header-form-container .form-container form .input:-ms-input-placeholder {
+  color: darkgrey;
+}
+
+.top-layer .header-form-container .form-container form .input::-ms-input-placeholder {
+  color: darkgrey;
+}
+
+.top-layer .header-form-container .form-container form .input::placeholder {
+  color: darkgrey;
+}
+
+.top-layer .header-form-container .form-container form .input:focus {
+  outline: none;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+}
+
+.top-layer .header-form-container .form-container form .input:hover::-webkit-input-placeholder {
+  color: black;
+}
+
+.top-layer .header-form-container .form-container form .input:hover:-ms-input-placeholder {
+  color: black;
+}
+
+.top-layer .header-form-container .form-container form .input:hover::-ms-input-placeholder {
+  color: black;
+}
+
+.top-layer .header-form-container .form-container form .input:hover::placeholder {
+  color: black;
+}
+
+.top-layer .header-form-container .form-container form .first-row {
+  margin: auto 10px;
+  width: 255px;
+}
+
+.top-layer .header-form-container .form-container form .text-2 {
+  display: block;
+  width: 850px;
+}
+
+.top-layer .header-form-container .form-container form .textarea {
+  width: 850px;
+  height: 64px;
+  resize: none;
+}
+
+.top-layer .header-form-container .form-container form .submit {
+  display: block;
+  margin: 20px auto;
+  width: 220px;
+  height: 55px;
+  border-radius: 0;
+  border: 2px solid black;
+  background-color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.top-layer .header-form-container .form-container form .submit:hover {
+  width: 250px;
+}
+
+.top-layer .header-form-container .form-container form .submit:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  width: 250px;
+}
+
+.top-layer .contact-adress-outer-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1100px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-layer .contact-adress-outer-container .contact-adress-inner-container {
+  width: 900px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.top-layer .contact-adress-outer-container .contact-adress-inner-container .contact-info {
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 550px;
+}
+
+.top-layer .contact-adress-outer-container .contact-adress-inner-container .location {
+  width: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-layer .contact-adress-outer-container .contact-adress-inner-container .location iframe {
+  width: 90%;
+  height: 90%;
+}
+/*# sourceMappingURL=style.css.map */
